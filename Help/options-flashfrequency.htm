@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Options - Icon Flash Frequency</title>
+<style>@import url(standard.css);</style>
+</head>
+
+<body>
+<h1>Options - Icon Flash Frequency</h1>
+Use the slide bar or the text box to input the frequency with which the system
+tray icon flashes (when the conditions are such as to cause it to flash). The
+value is in milliseconds. The minimum value is 100 milliseconds and
+the maximum is 5000 milliseconds. The input box accepts only numbers and
+any value ouside of the maximum or minimum is changed to the nearest acceptable
+value. For example, if 9999 is entered, UK Weather will change this to 5000.
+Note that:
+<ul>
+<li>Technically, the value is actually half the frequency, as the value entered
+is the duration that the icon stays a particular colour for. Of course,
+mathematically speaking, the frequency should include a whole cycle and not half
+a cycle!</li>
+<li>The value entered is stored in the registry. If the registry value is
+changed manually, UK Weather will ensure that the value falls within the maximum
+and minimum values. If the registry value is missing, or contains garbage, UK
+Weather defaults to 500 milliseconds.</li>
+<li>Changes input via the interface are dynamic. That is, UK Weather does not
+require a restart for the changes to take effect. Changes input via the
+registry require a restart of UK Weather.</li>
+</ul>     
+</body>
+</html>

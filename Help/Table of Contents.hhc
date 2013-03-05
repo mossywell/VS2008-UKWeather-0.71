@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="UK Weather">
+		<param name="Local" value="topic-ukweather.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Installation">
+			<param name="Local" value="topic-installation.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Installation Details">
+				<param name="Local" value="installation-details.htm">
+				<param name="URL" value="installation-details.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Desktop Changes">
+					<param name="Local" value="installation-details.htm#Desktop_Changes">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Installed Files">
+					<param name="Local" value="installation-details.htm#Installed_Files">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Registry Settings">
+					<param name="Local" value="installation-details.htm#Registry_Settings">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Uninstalling UK Weather">
+				<param name="Local" value="installation-uninstalling.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Running UK Weather">
+			<param name="Local" value="topic-running.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="UK Weather Desktop">
+				<param name="Local" value="running-desktop.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Menu Items">
+				<param name="Local" value="running-contextmenu.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Options">
+					<param name="Local" value="running-options.htm">
+					</OBJECT>
+				<UL>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Temperature Scale">
+						<param name="Local" value="options-tempscale.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Postcode">
+						<param name="Local" value="options-postcode.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Update Interval">
+						<param name="Local" value="options-updateinterval.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="When the Weather Changes">
+						<param name="Local" value="options-changes.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Flash Frequency">
+						<param name="Local" value="options-flashfrequency.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Run at system startup">
+						<param name="Local" value="options-runatstartup.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Notify User...">
+						<param name="Local" value="options-notifyuser.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Check For New Version...">
+						<param name="Local" value="options-newvercheck.htm">
+						</OBJECT>
+				</UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Colour Scheme">
+					<param name="Local" value="running-colourscheme.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Update Now">
+					<param name="Local" value="running-updatenow.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Weather Web Site">
+					<param name="Local" value="running-weatherwebsite.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Mossywell Web Site">
+					<param name="Local" value="running-mossywellwebsite.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Help">
+					<param name="Local" value="running-help.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="About">
+					<param name="Local" value="running-about.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Exit">
+					<param name="Local" value="running-exit.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Troubleshooting">
+				<param name="Local" value="troubleshooting.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

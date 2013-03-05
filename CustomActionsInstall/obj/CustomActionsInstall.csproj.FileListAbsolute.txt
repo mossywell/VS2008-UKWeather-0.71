@@ -1,0 +1,16 @@
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsInstall\bin\Debug\CustomActionsInstall.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsInstall\bin\Debug\CustomActionsInstall.pdb
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsInstall\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsInstall\obj\Debug\CustomActionsInstall.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsInstall\obj\Debug\CustomActionsInstall.pdb
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsInstall\bin\Release\CustomActionsInstall.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsInstall\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsInstall\obj\Release\CustomActionsInstall.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsInstall\bin\Release\CustomActionsInstall.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsInstall\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsInstall\obj\Release\CustomActionsInstall.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsInstall\bin\Debug\CustomActionsInstall.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsInstall\bin\Debug\CustomActionsInstall.pdb
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsInstall\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsInstall\obj\Debug\CustomActionsInstall.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsInstall\obj\Debug\CustomActionsInstall.pdb

@@ -1,0 +1,38 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=UKWeather.chm
+Contents file=Table of Contents.hhc
+Default topic=topic-ukweather.htm
+Display compile progress=Yes
+Full-text search=Yes
+Language=0x809 English (United Kingdom)
+
+[FILES]
+standard.css
+installation-details.htm
+installation-uninstalling.htm
+running-contextmenu.htm
+running-desktop.htm
+topic-installation.htm
+topic-running.htm
+topic-ukweather.htm
+running-options.htm
+running-colourscheme.htm
+running-updatenow.htm
+running-weatherwebsite.htm
+running-mossywellwebsite.htm
+running-help.htm
+running-about.htm
+running-exit.htm
+options-updateinterval.htm
+options-postcode.htm
+options-changes.htm
+options-flashfrequency.htm
+options-runatstartup.htm
+options-notifyuser.htm
+options-newvercheck.htm
+options-tempscale.htm
+troubleshooting.htm
+
+[INFOTYPES]
+

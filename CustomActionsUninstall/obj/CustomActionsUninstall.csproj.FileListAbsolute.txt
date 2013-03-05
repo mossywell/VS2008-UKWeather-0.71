@@ -1,0 +1,16 @@
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsUninstall\bin\Debug\UninstallTidyUp.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsUninstall\bin\Debug\UninstallTidyUp.pdb
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsUninstall\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsUninstall\obj\Debug\UninstallTidyUp.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsUninstall\obj\Debug\UninstallTidyUp.pdb
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsUninstall\bin\Release\UninstallTidyUp.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsUninstall\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.70\CustomActionsUninstall\obj\Release\UninstallTidyUp.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsUninstall\bin\Release\UninstallTidyUp.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsUninstall\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsUninstall\obj\Release\UninstallTidyUp.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsUninstall\bin\Debug\UninstallTidyUp.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsUninstall\bin\Debug\UninstallTidyUp.pdb
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsUninstall\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsUninstall\obj\Debug\UninstallTidyUp.exe
+C:\Documents and Settings\MThurston\My Documents\Visual Studio 2005\Projects\UKWeather 0.71\CustomActionsUninstall\obj\Debug\UninstallTidyUp.pdb

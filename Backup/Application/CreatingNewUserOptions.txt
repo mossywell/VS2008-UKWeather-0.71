@@ -1,0 +1,15 @@
+When creating new user options, there are many things to do:
+
+1. Add the option to the UserOptions structure. Make the type the "real" type
+   and not a registry type.
+2. Create a registry key constant for the registry value and a default value
+   if necessary.
+3. Create a new method that gets and sets the new value.
+4. Call the method in the Form_Load method.
+5. Adjust any other code to use the new option variable rather than hard coded
+   values. (Check this carefully!)
+6. Add the option to the Options form.
+7. Add the option initialisation to the Options form Form_Load method.
+8. Save the settings in ValidateAndSaveChanges.
+9. Back in Form_Main, MenuOptions, save the value and act upon it if necessary.
+10. Add an explanation to the help files.

@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Troubleshooting</title>
+<style>@import url(standard.css);</style>
+</head>
+
+<body>
+<h1>Troubleshooting</h1>
+In practice, UK Weather
+should be self sufficient in that if, for example, there are missing registry
+entries, it will simply use the defaults and put those defaults back into the
+registry. However, some conditions may occur that cause an unusual reponse.
+This section deals with those conditions in a symptomatic manner.
+<h2>Symptoms</h2>
+<ul>
+<li>A dialog has appeared stating that an unexpected exception has occurred.
+There are various forms that this dialog can take depending on whether the JIT
+debugger is enabled and whether the CLR has generated the error and so on.
+However, they all have the same feature: they all look serious! I've tried to
+capture and handle all exceptions that I think reasonably can occur. However,
+it is always possible that I've missed one. :-)<br><br> 
+Resolution: If one does appear, by all means email it to me and I'll take a
+look. The email address is: ukweather@mossywell.com.<br><br>  
+</li>
+<li>A dialog has appeared stating that UK Weather is already running:<br><br>
+<div class="center"><img src="images/dialog-ukwrunning.png"></div><br><br>
+Resolution: As only one instance of UK Weather can be run at any time, take
+a look in the System Tray (bottom right, normally). If you can't see it there,
+it's possible that it is running but has disappeared for some reason. Press
+Ctrl-Alt-Del and use the Task Manager to kill off an executable called 
+UKWeather.exe. Don't worry: it won't cause any harm to kill off UK Weather
+abruptly.<br><br>  
+</li>
+<li>A dialog has appeared stating that "The operation has timed-out.":<br><br>
+<div class="center"><img src="images/dialog-optimedout.png"></div><br><br>
+This warning usually occurs if UK Weather is unable to obtain the latest version
+information from the Internet. It can occur for many reasons such as the local
+PC not having an Internet connection when UK Weather is started, to the
+destination server not being available.<br><br> 
+Resolution: Check your Internet connectivity. If you don't yet have Internet
+connectivity then ignore this warning as it is to be expected. If you do have
+Internet connectivity, it is likely that the server that contains the version
+information is temporarily unavailable. Ignore the warning as it should be back
+up fairly quickly.<br><br>  
+</li>
+<li>A dialog has appeared stating that "The underlying connection was closed.":
+<br><br>
+<div class="center"><img src="images/dialog-nonetwork.png"></div><br><br>
+This warning usually occurs if UK Weather cannot resolve DNS names to IP
+addresses. This would typically occur if the PC running UK Weather does not
+have access to a DNS server.<br><br> 
+Resolution: Check your Internet connectivity and that the PC has the correct
+DNS setting in the IP Properties.<br><br>  
+</li>
+<li>An dialog has appeared stating that the registry is not accessible:<br><br>
+<div class="center"><img src="images/dialog-regerror.png"></div><br><br>
+This is most likely to occur if UK Weather cannot access the registry because
+of permissions or corruption. Note that:
+  <ul>
+  <li>UK Weather can still function without registry access.</li>
+	<li>All the settings that it tries to write but is unable to are logged in the
+	System Log of the Event Log.</li>
+  </ul>
+<br>
+Resolution: Open up the registry editor and navigate to:
+HKEY_CURRENT_USER\Software\Mossywell. Check that the key exists and check that
+the current user (i.e. you) has Full Control over this key.<br><br>
+</li>
+<li>
+One of the "unusual" icons has appeared instead of the normal temperature icon.
+There are four "unusual" icons that can appear:<br><br>
+<img src="images/question-off.jpg">
+<img src="images/badpostcode-off.jpg">
+<img src="images/nonetwork-off.jpg">
+<img src="images/odddata-off.jpg"><br><br>
+Note that the icons may be a different colour and they may be flashing. Each
+icon and the resolution is explained in turn:<br><br>
+<table>
+<tr>
+<td><img src="images/question-off.jpg"></td>
+<td>This icon appears when UK Weather is first trying to obtain data after it is
+started and this is normal. It should change to a different icon after about
+30 seconds. If it
+remains for longer than this, it is probably because an unhandled exception
+has occurred, but the exception handling is not allowing the exception to show
+on the screen.<br><br>
+Resolution: Please email me at ukweather@mossywell.com to let me know.</td>
+</tr>
+<tr>
+<td><img src="images/badpostcode-off.jpg"></td>
+<td>This icon appears when UK Weather has successfully retrieved data but the
+data indicates that there is no such postcode. It does <i>not</i> mean that
+the postcode doesn't exist, simply that the web site that UK Weather gets the
+data from doesn't know about it.<br><br>
+Resolution: Go to uk.weather.com and enter the postcode directly into the form.
+If it still complains that the postcode is invalid, then this postcode cannot be
+used. If, however, the web site returns weather information, then it is possible
+that the returned data is not being parsed correctly. If so, please email me at
+ukweather@mossywell.com to let me know.</td>
+</tr>
+<tr>
+<td><img src="images/nonetwork-off.jpg"></td>
+<td>This icon appears when UK Weather cannot obtain data from the web site. The
+most common cause is that the PC has no Internet connection. Also possible is
+that the web site uk.weather.com is down, for example, for maintenence. Note
+that if UK Weather has sucessfully obtained data and <i>then</i> the Internet
+connection is lost, UK Weather will continue to display the "old" data until
+a configuration change is made or it is restarted. The idea behind this is to
+allow users with non-persistent connections (i.e. dialup) to view the last data
+rather than see the "no network" icon.
+<br><br>
+Resolution: Go to uk.weather.com. If the site does not respond then wait until
+it is back again. UK Weather will find the site once it is back up. If the site
+does respond, it is possible that they have changed the URL that data is
+obtained from. If so, please email me at
+ukweather@mossywell.com and I'll find out what the new URL is and release a new
+URL file centrally which should fix the problem until a new version of UK
+Weather is released. You will not need to do anything other than restart UK
+Weather to pick up the new URL.</td>
+</tr>
+<tr>
+<td><img src="images/odddata-off.jpg"></td>
+<td>This icon appears when UK Weather has successfully retrieved data but the
+data is meaningless! It is most likely to occur when the web site uk.weather.com
+has changed significantly.<br><br>
+Resolution: Please email me at
+ukweather@mossywell.com and I'll investigate further. If it can be fixed
+centrally by a
+new URL file, I'll do that. Otherwise, there may be a delay whilst I re-code 
+the application to parse the data correctly!</td>
+</tr>
+</table>
+
+
+</li>
+</ul>
+<br>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Installation Details</title>
+<style>@import url(standard.css);</style>
+</head>
+
+<body>
+<h1>Installation Details</h1>
+This section explains what is installed and where. It is useful if you wish to
+uninstall the software manually, for example.<br><br>
+<a href="#Desktop_Changes">Desktop Changes</a><br>
+<a href="#Installed_Files">Installed Files</a><br>
+<a href="#Registry_Settings">Registry Settings</a>
+
+<h2><a name="Desktop_Changes">Desktop Changes</a></h2>
+The setup program only adds an icon to the desktop. The start menu is left
+untouched. So, if you want to add the item to the start menu, you will have to
+add it manually.
+
+<h2><a name="Installed_Files">Installed Files</a></h2>
+The default installation directory is:
+<ul>
+<li>C:\Program Files\Mossywell\UK Weather</li>
+</ul>
+As of version 0.60, the files installed into this directory are:<br><br>
+<table>
+<tr>
+<td class="bold">File</td>
+<td class="bold">Details</td>
+</tr>
+<tr>
+<td>README.TXT</td>
+<td>Last minute information about the application not present in the help
+pages.</td>
+</tr>
+<tr>
+<td>UKWeather.exe</td>
+<td>The application itself. Note that it is a standalone executable and doesn't
+come with any DLLs.</td>
+</tr>
+<tr>
+<td>UKWeather.chm</td>
+<td>This help file!</td>
+</tr>
+</table>
+
+<h2><a name="Registry_Settings">Registry Settings</a></h2>
+As of version 0.50, the Class IDs used by this application are:
+<ul>
+<li>{05120F5A-9D53-4C7B-80D2-B307EFAAAB93} - used by the installer</li>
+</ul>
+Application settings are stored in the following location:
+<ul>
+<li>HKEY_CURRENT_USER\Software\Mossywell\UK Weather</li>
+</ul>
+The individual values are obvious because they're taken directly from the
+interface, so they won't be explained further here. Note that XML files are not
+used to store settings (which is Microsoft's preferred method in .Net
+applications) because XML settings are not dynamic and only take effect when
+the application is restarted.<br><br>
+If the "Run at system startup" option is chosen, it stores the setting in the
+following location:
+<ul>
+<li>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</li>
+</ul>
+in a value (not surprisingly) called "UKWeather". Note that I'm using the
+current user rather than HKEY_LOCAL MACHINE hive.<br><br>
+Finally, the Windows Installer saves a plethora of settings. They're not listed
+here, but a trawl for the word "mossywell" in the registry will dig them out.
+</body>
+</html>

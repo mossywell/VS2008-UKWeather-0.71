@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>UK Weather Desktop</title>
+<style>@import url(standard.css);</style>
+</head>
+
+<body>
+<h1>UK Weather Desktop</h1>
+<h2>Desktop Icon</h2>
+Once installed, the application will show as a shortcut icon on the desktop:
+<br><br>
+<div style="text-align: center;">
+<img style="text-align: center;" src="images\desktop-icon.jpg">
+</div><br><br>
+Double-click on the icon to start it. Any settings from when UK Weather was last
+run, such as the postcode, will automatically be loaded again. The default
+values, which are used when UK Weather is run the first time, are as follows:
+<br><br>
+<table>
+<tr>
+<td class="bold">Check Version and URL</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td class="bold">When the weather changes</td>
+<td>Flash the System Tray icon</td>
+</tr>
+<tr>
+<td class="bold">Icon Flash Frequency</td>
+<td>500</td>
+</tr>
+<tr>
+<td class="bold">New Version Popup</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td class="bold">Postcode</td>
+<td>SW19</td>
+</tr>
+<tr>
+<td class="bold">Temperature Scale</td>
+<td>Celsius</td>
+</tr>
+<tr>
+<td class="bold">Update Interval</td>
+<td>300</td>
+</tr>
+<tr>
+<td class="bold">Run at Startup</td>
+<td>No</td>
+</tr>
+</table><br><br>
+<h2>System Tray Icon</h2>
+Once running, UK Weather will appear as an icon in the system tray
+(shown on the left in the following image):<br><br>
+<div class="center">
+<img src="images\tray-icons.jpg"></div><br><br>
+Of course, your own icons will probably be different to this and the temperature
+will probably be different. The icon shows the temperature in degrees Celsius
+(centigrade). If the mouse is hovered over the icon, the popup will also show
+the following information.<br>
+<br>
+<div class="center">
+<img src="images\running-mouseover.png"></div><br><br>
+
+<h2>System Tray Icon Symbols</h2>
+In general, the system tray icon shows the current temperature. However, as
+always, it's a little more complex than that! What the icon shows actually
+depends on a number of factors.
+<ul>
+<li>The UK Weather options</li>
+<li>The temperature</li>
+<li>Whether the temperature or the description of the weather has changed</li>
+<li>Whether there is an Internet connection when UK Weather tries to obtain data
+</li>
+<li>Whether the postcode entered is valid</li>
+<li>What was previously displayed as the icon</li>
+</ul>
+The following table attempts to explain the algorithm used.<br><br>
+<table>
+
+<tr>
+<td class="bold">Status</td>
+<td class="bold">Resulting Icon</td>
+</tr>
+
+<tr>
+<td>UK Weather has just been started and is attempting to obtain data.</td>
+<td>A question mark:<br><br>
+<div class="center"><img src="images\question-off.jpg"></div><br><br>
+</td>
+</tr>
+
+<tr>
+<td>Weather data was sucessfully obtained.</td>
+<td>A normal temperature icon.<br><br>
+If the option "No Change" is chosen, then the icon will simply show the
+temperature as and when it changes:<br>
+<div class="center"><img src="images\icon-off.jpg"></div><br><br>
+If the option "Change Once" is chosen, then the icon
+will show the temperature in a lighter colour than normal:<br>
+<div class="center"><img src="images\icon-on.jpg"></div>
+Once the mouse is moved over the icon, it will revert back to the normal icon:
+<div class="center"><img src="images\icon-off.jpg"></div>
+This option is useful if you wish to be alerted to a change in the weather, but
+find a flashing icon too distracting.<br><br><br>
+If the options "Flash" or "Flash Continuously" are chosen, then the icon
+will alternate between a lighter colour and the normal colour:<br>
+<div class="center"><img src="images\icon-flash.jpg"></div>
+Then, if the option "Flash" is chosen, once the mouse is moved over the icon
+, it will revert back to the normal icon:
+<div class="center"><img src="images\icon-off.jpg"></div><br><br>
+</td>
+</tr>
+
+<tr>
+<td>UK Weather has obtained data but the data doesn't contain a valid
+temperature.</td>
+<td>
+The letter "X":<br>
+<div class="center"><img src="images\odddata-off.jpg"> or 
+<img src="images\odddata-on.jpg"></div><br><br>
+The flashing behaviour of the icon is exactly the same as for a normal
+temperature icon.<br><br>
+</td>
+</tr>
+
+<tr>
+<td>The returned data could not be parsed into something useful. This usually
+occurs if the postcode is invalid.</td>
+<td>
+The letter "P":<br>
+<div class="center"><img src="images\badpostcode-off.jpg"> or 
+<img src="images\badpostcode-on.jpg"></div><br><br>
+The flashing behaviour of the icon is exactly the same as for a normal
+temperature icon.<br><br>
+</td>
+</tr>
+
+<tr>
+<td>The web site could not be contacted. This would normally happen if a
+dial-up connection was being used and the connection was currently closed.</td>
+<td>
+This is the most complex situation!<br><br>
+If the previous status was an invalid
+postcode, the icon displayed is the letter "N". In addition, the error is logged
+in the Event Log. This overrides all other possibilites:<br>
+<div class="center"><img src="images\nonetwork-off.jpg"> or 
+<img src="images\nonetwork-on.jpg"></div><br><br>
+Otherwise, if the postcode has been changed since UK Weather lost connection
+to the Internet (or UK weather has just been started), the icon displayed is
+also the letter "N" and the error is logged in the Event Log:<br>
+<div class="center"><img src="images\nonetwork-off.jpg"> or 
+<img src="images\nonetwork-on.jpg"></div><br><br>
+If the postcode is unchanged since the connection was lost, UK Weather continues
+to display the last obtained weather:<br>
+<div class="center"><img src="images\icon-off.jpg"> or 
+<img src="images\icon-on.jpg"></div><br><br>
+How do you know that the connection has been lost? The time that UK Weather last
+tried to obtain data and the time that UK Weather last obtained data
+successfully will be greater than the update frequency.<br><br>
+The flashing behaviour of the icon is exactly the same as for a normal
+temperature icon.<br><br>
+</td>
+</tr>
+
+</table>
+
+<h2>The Context Menu</h2>
+To administer UK Weather, right mouse click on the
+icon. This will launch the <a href="running-contextmenu.htm">context menu</a>:
+<br><br>
+<div class="center">
+<img src="images\context-menu.jpg"></div><br><br>
+
+</body>
+</html>
